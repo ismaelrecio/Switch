@@ -5,19 +5,22 @@
  */
 package swichybreak;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Usuario DAM 1
  */
-public class clase {
+public class Rango {
+
     public static void main(String[] args) {
-        Scanner teclado=new Scanner(System.in);
-        System.out.println("Introduce un numero del 1 al 10");
-        int numero=teclado.nextInt();
-        for(int i = 1;i<=10;i = numero++){
-            
+
+        int resultado;
+        for (int i = 3; i <= 7; i++) {
+            System.out.printf("Tabla del %d %n", i);
+            for (int x = 0; x <= 10; x++) {
+                resultado = i * x;
+                System.out.printf("%d*%d=%d %n", i, x, resultado);
+            }
         }
+
     }
 }
